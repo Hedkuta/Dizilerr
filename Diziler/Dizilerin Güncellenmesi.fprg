@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="KUTAY"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-14 05:53:46 &#214;S"/>
+        <attribute name="created" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMTQ7MDU6NDc6NTUgw5ZTOzI5MjM="/>
+        <attribute name="edited" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMTQ7MDU6NTM6NDYgw5ZTOzE7MzAyOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="notlar" type="Integer" array="True" size="5"/>
+            <assign variable="notlar[0]" expression="83"/>
+            <assign variable="notlar[1]" expression="77"/>
+            <assign variable="notlar[2]" expression="71"/>
+            <assign variable="notlar[3]" expression="60"/>
+            <assign variable="notlar[4]" expression="40"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <assign variable="notlar[i]" expression="notlar[i] + 10"/>
+            </for>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <output expression="notlar[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

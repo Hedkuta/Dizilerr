@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="KUTAY"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-14 06:59:35 &#214;S"/>
+        <attribute name="created" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMTQ7MDY6NTM6MzEgw5ZTOzI5MTU="/>
+        <attribute name="edited" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMTQ7MDY6NTk6MzUgw5ZTOzE7MzAzMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, notOrtalamas&#305;, ortalama" type="Real" array="False" size=""/>
+            <declare name="notlar" type="Real" array="True" size="5"/>
+            <assign variable="notOrtalamas&#305;" expression="0"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <output expression="i + 1 &amp; &quot;. Notunuzu Giriniz&quot;" newline="True"/>
+                <input variable="notlar[i]"/>
+            </for>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <assign variable="notOrtalamas&#305;" expression="notOrtalamas&#305; + notlar[i]"/>
+            </for>
+            <assign variable="ortalama" expression="notOrtalamas&#305; / 5"/>
+            <output expression="&quot;Notlar&#305;n&#305;z&#305;n Ortalamas&#305;: &quot; &amp; ortalama" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
